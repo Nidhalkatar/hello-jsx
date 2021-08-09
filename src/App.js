@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './style.css';
+import Image from './nidhal1.jpg';
+import Video from './video.mp4';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="titleRed">Nidhal Katar </h1>
+      <div  style={{border:"solid 1px black", maxWidth:"100%"}}>
+<br />
+<img  className="Photo" src="/nidhal2.jpg" alt="image" />
+<br/>
+<img   className="Photo"src={Image} alt ='Image' />
+</div>
+<video autostart autoPlay muted src={Video} type="video/mp4"  style={{width:900, height:500}} />
     </div>
   );
 }
